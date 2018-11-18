@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Healthy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="facaoseu">Faça o seu Registro</string>
+    <string name="Entrar"> Entrar</string>
+    <string name="ImageP">Imagem Principal</string>
+    <string name="login"> Login </string>
+    <string name="textLogin">Veja o calendário de vacina, aqui</string>
+    <string name="FatherName">Nome do Responsável do Bebé</string>
+    <string name="FatherEmail">Email do Responsável</string>
+    <string name="PW">Palavra Passe</string>
+    <string name="CPW">Confirma a Palavra Passe</string>
+    <string name="salvar"> Salvar </string>
+    <string name="registrar">Registrar</string>
+    <string name="nome">Nome</string>
+    <string name="sexo">Sexo</string>
+    <string name="idade">Idade</string>
+    <string name="concluindo">Concluindo o Registro</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackathon.healthy.Principal_User_Interface"
+    android:background="@drawable/shapebackground"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/africachild"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+       android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cartão de Vacina"
+        android:textSize="30sp"/>
+
+    <Button
+        android:layout_marginTop="95dp"
+        android:id="@+id/botaoP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bentrar"
+        android:contentDescription="@string/ImageP"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:onClick="Entrar"
+        android:text="@string/Entrar"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>
