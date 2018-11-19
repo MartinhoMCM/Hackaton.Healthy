@@ -7,7 +7,6 @@ public final class ContactContract {
 
     }
 
-
     public static class ContactEntry
     {
 

@@ -5,26 +5,42 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  implements HomeFragment.OnDbOpListener , Father_Fragment.OnItemSelectedListener{
 
-   public  static FragmentManager fragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        fragmentManager =getSupportFragmentManager();
-
         if(findViewById(R.id.fragment_container)!=null)
         {
             if(savedInstanceState!=null)
             {
                 return;
             }
-            FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
-            HomeFragment homeFragment = new HomeFragment();
-            fragmentTransaction.add(R.id.fragment_container, homeFragment).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new HomeFragment()).commit();
         }
+    }
+
+    @Override
+    public void dbOperationPerfomed(int method) {
+
+        if(method==0)
+        {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Father_Fragment()).addToBackStack(null).commit();
+
+        }
+        else if(method==1)
+        {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new LoginFragment()).addToBackStack(null).commit();
+        }
+
+    }
+
+    @Override
+    public void onRssItemSelected(int methodo) {
+
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SonFragment()).addToBackStack(null).commit();
+
     }
 }
