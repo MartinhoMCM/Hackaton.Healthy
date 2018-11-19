@@ -6,17 +6,22 @@
     <string name="Entrar"> Entrar</string>
     <string name="ImageP">Imagem Principal</string>
     <string name="login"> Login </string>
-    <string name="textLogin">Veja o calendário de vacina, aqui</string>
-    <string name="FatherName">Nome do Responsável do Bebé</string>
-    <string name="FatherEmail">Email do Responsável</string>
+    <string name="textLogin">Faça o login para teres acesso aos cartões dos teus filhos</string>
+    <string name="FatherName">Nome </string>
+    <string name="FatherEmail">Email</string>
     <string name="PW">Palavra Passe</string>
     <string name="CPW">Confirma a Palavra Passe</string>
     <string name="salvar"> Salvar </string>
     <string name="registrar">Registrar</string>
     <string name="nome">Nome</string>
-    <string name="sexo">Sexo</string>
+    <string name="sexo">Sexo (M ou F)</string>
     <string name="idade">Idade</string>
     <string name="concluindo">Concluindo o Registro</string>
+    <string name="pai">Como responsável da criança, primeiro adicione seus dados</string>
+    <string name="bebe">Para terminar, preencha os dados da tua criança</string>
+    <string name="signIn">Entrar</string>
+    <string name="IPW">Palavra Passe</string>
+    <string name="ola">Ola</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackathon.healthy.LoginFragment"
+    android:orientation="vertical"  android:background="@drawable/shapebackground">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/textLogin"
+        android:ems="10"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:background="@color/greyW"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/FatherEmail"
+        android:inputType="text" />
+
+    <EditText
+        android:background="@color/greyW"
+        android:textSize="30sp"
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/IPW"
+
+
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/bentrar"
+        android:ems="70"
+        android:fontFamily="sans-serif"
+        android:text="@string/signIn"
+        android:textColor="#FFF" />
+
+</LinearLayout>
