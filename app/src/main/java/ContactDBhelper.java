@@ -23,7 +23,7 @@ public final class ContactDBhelper  extends SQLiteOpenHelper {
 
 
     public static final String CREATE_TABLE ="create table " + ContactContract.ContactEntry.TABLE_NAME +
-            "(" + ContactContract.ContactEntry.ID + " number," + ContactContract.ContactEntry.FATHERNAME+" text," +
+            "(" + ContactContract.ContactEntry.FATHERNAME+" text," +
             ContactContract.ContactEntry.FATHEREMAIL+ " text,"+ ContactContract.ContactEntry.FATHERPASSWORD +" text,"+ContactContract.ContactEntry.BABYNAME+ " text,"+
             ContactContract.ContactEntry.BABYAGE+ " text," + ContactContract.ContactEntry.BABYSEX+ " text);";
 
