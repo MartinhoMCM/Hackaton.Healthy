@@ -13,8 +13,10 @@ import android.util.Log;
 
 public final class ContactManagerHelper  extends SQLiteOpenHelper{
 
-    private static final String CREATE_TABLE ="create table "+ ContactContract.ContactEntry.TABLE_NAME+"("+ ContactContract.ContactEntry.FATHERNAME +" text,"+ ContactContract.ContactEntry.FATHEREMAIL +" text," +
-            ContactContract.ContactEntry.FATHERPASSWORD+ " text,"+ ContactContract.ContactEntry.BABYNAME +" text,"+ ContactContract.ContactEntry.BABYAGE+" text,"
+    private static final String CREATE_TABLE ="create table "+ ContactContract.ContactEntry.TABLE_NAME+
+            "("+ ContactContract.ContactEntry.FATHERNAME +" text,"+ ContactContract.ContactEntry.FATHEREMAIL +" text," +
+            ContactContract.ContactEntry.FATHERPASSWORD+ " text,"+ ContactContract.ContactEntry.BABYNAME +" text,"+
+            ContactContract.ContactEntry.BABYAGE+" text,"
             + " text," +ContactContract.ContactEntry.BABYSEX+" text);";
 
     private static final String DROP_TABLE="Drop table if exists "+ContactContract.ContactEntry.TABLE_NAME;

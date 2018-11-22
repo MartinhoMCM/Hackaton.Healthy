@@ -4,66 +4,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.hackathon.healthy.HomeFragment"
-    android:background="@drawable/shapebackground"
+    android:background="@color/babckgray"
     >
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
-        android:text="@string/textLogin"
-        android:textAlignment="center"
-        android:textColor="#FFF"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123"
-        />
+        android:background="@color/babckgray">
 
-    <Button
-        android:textColor="#FFF"
-        android:id="@+id/ButtonLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/bentrar"
-        android:text="@string/login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454" />
+        <LinearLayout
+            android:background="#fff"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="299dp"
+            android:orientation="vertical">
+            <Button
 
-    <Button
-        android:textColor="#FFF"
-        android:id="@+id/ButtonRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/bentrar"
-        android:gravity="center"
-        android:text="@string/registrar"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662" />
+                android:textColor="#FFF"
+                android:id="@+id/ButtonLogin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bentrar"
+                android:text="@string/login"
+                 />
+
+
+            <Button
+                android:textColor="#FFF"
+                android:id="@+id/ButtonRegistrar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bentrar"
+                android:gravity="center"
+                android:text="@string/registrar"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
 
 </android.support.constraint.ConstraintLayout>

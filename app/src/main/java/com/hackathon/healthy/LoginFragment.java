@@ -21,7 +21,6 @@ public class LoginFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -34,30 +33,10 @@ public class LoginFragment extends Fragment {
        entrar.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-
-              String Email=email.toString();
-              String Password=password.toString();
-
-              if(Email.equals("") || Password.equals(""))
-              {
-                  Toast.makeText(getActivity(), "Campos vazios", Toast.LENGTH_SHORT).show();
-              }
-              else
-              {
-                  ContactManagerHelper contactManagerHelper = new ContactManagerHelper(getActivity());
-
-                  if(!contactManagerHelper.checkLogin(Email, Password)) {
-                      Intent intent = new Intent(getActivity(), Dashboard.class);
-                      ((MainActivity) getActivity()).startActivity(intent);
-                  }
-                  else
-                  {
-                      Toast.makeText(getActivity(), "Essa conta não existe", Toast.LENGTH_SHORT).show();
-                  }
-              }
+               Intent intent = new Intent(getActivity(), Dashboard.class);
+               ((MainActivity) getActivity()).startActivity(intent);
            }
        });
-
 
        return view;
     }

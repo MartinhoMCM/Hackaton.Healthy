@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#009688</color>
-    <color name="colorPrimaryDark">#00796B</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimaryDark">#607D8B</color>
+    <color name="colorAccent">#cc03dac5</color>
+
+    <color name="transparent">#efefef</color>
     <color name="red">#FF5252</color>
     <color name="grey">#bdbdbd</color>
     <color name="greyW">#FAFAFA</color>
+    <color name="babckgray">#f1f5f8</color>
+
+
+    <!--
+    #009688
+    #00796B
+    #03DAC5
+    -->
 
 </resources>
