@@ -25,7 +25,7 @@
             android:orientation="vertical">
             <TextView
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="@string/facaoseu"
@@ -62,22 +62,34 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:layout_marginBottom="8dp"
-
                 android:inputType="text"
                 android:singleLine="true"
                 android:hint="@string/nmae"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/edittext"/>
-
+            <EditText
+                android:id="@+id/fathernickname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:layout_marginTop="16dp"
+                android:hint="@string/nickname"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:background="@drawable/edittext"
+                android:layout_gravity="center_horizontal"
+                />
             <EditText
                 android:textSize="16sp"
-                android:id="@+id/password"
+                android:id="@+id/morada"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="20dp"
                 android:ems="10"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:hint="@string/morada"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/edittext"/>
@@ -100,6 +112,19 @@
             <EditText
                 android:textSize="16sp"
                 android:background="@drawable/edittext"
+                android:id="@+id/password"
+                android:layout_width="300dp"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:hint="@string/PW"
+                android:inputType="textPassword"
+                />
+
+            <EditText
+                android:textSize="16sp"
+                android:background="@drawable/edittext"
                 android:id="@+id/confirrmarpassoword"
                 android:layout_width="300dp"
                 android:layout_marginTop="16dp"
@@ -109,6 +134,7 @@
                 android:hint="@string/CPW"
                 android:inputType="textPassword"
                 />
+
 
             <Button
                 android:id="@+id/salvar"

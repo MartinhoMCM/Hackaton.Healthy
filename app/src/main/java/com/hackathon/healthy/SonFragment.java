@@ -31,12 +31,11 @@ public class SonFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_son, container, false);
-        textView1 =view.findViewById(R.id.father);
+      //  textView1 =view.findViewById(R.id.fathernickname);
         final Bundle bundle =getArguments();
         father_name=bundle.getString("fathername");
         father_email=bundle.getString("fatheremail");
         father_password=bundle.getString("fatherpassword");
-        textView1.setText("Olá "+father_name +" ,");
 
         babyname = view.findViewById(R.id.babyname);
         babyidade=view.findViewById(R.id.babyidade);

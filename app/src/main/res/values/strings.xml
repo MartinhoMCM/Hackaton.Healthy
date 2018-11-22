@@ -19,7 +19,7 @@
     <string name="idade">Idade</string>
     <string name="concluindo">Concluindo o Registro</string>
     <string name="pai">Como responsável da criança, primeiro adicione seus dados</string>
-    <string name="bebe">Para terminares, preencha os dados do bebé</string>
+    <string name="bebe">Para terminares, introduza os dados do bebé</string>
     <string name="signIn">Entrar</string>
     <string name="IPW">Palavra Passe</string>
     <string name="ola">Olá</string>
@@ -43,5 +43,8 @@
     <string name="wellcome">Seja Bem Vindo</string>
     <string name="textoInicial">Texto Inicial</string>
     <string name="name">ImageInicial</string>
+    <string name="data">Data de Nascimento</string>
+    <string name="CartaodeSaude">Cartão de Saúde Infantil</string>
+    <string name="nickname">Nome do Usuário</string>
 
 </resources>

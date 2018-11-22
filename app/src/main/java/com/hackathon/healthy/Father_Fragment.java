@@ -26,7 +26,6 @@ public class Father_Fragment extends Fragment  implements View.OnClickListener{
 
         }
 
-
     public Father_Fragment() {
         // Required empty public constructor
     }
@@ -50,23 +49,8 @@ public class Father_Fragment extends Fragment  implements View.OnClickListener{
     @Override
     public void onClick(View v) {
 
+        listener.onRssItemSelected(fathername.getText().toString(), fatheremail.getText().toString(), fatherpass.getText().toString());
 
-            if(!(fathername.getText().toString().compareToIgnoreCase("")==0 || fatheremail.getText().toString().compareToIgnoreCase("")==0 ||
-                    fatherpass.getText().toString().compareToIgnoreCase("")==0 || fatherpass.getText().toString().compareToIgnoreCase("")==0))
-            {
-              if(fatherpass.getText().toString().equals(fathercpass.getText().toString()))
-              {
-                  listener.onRssItemSelected(fathername.getText().toString(), fatheremail.getText().toString(), fatherpass.getText().toString());
-              }
-              else
-              {
-                  Toast.makeText(getContext(), "As palavras passe não combinam", Toast.LENGTH_SHORT).show();
-              }
-            }
-            else
-            {
-                Toast.makeText(getContext(), "Por favor, preencha os campos vazios", Toast.LENGTH_SHORT).show();
-            }
     }
     @Override
     public void onAttach(Context context) {
@@ -79,12 +63,12 @@ public class Father_Fragment extends Fragment  implements View.OnClickListener{
         }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        fathername.setText("");
-        fatheremail.setText("");
-        fatherpass.setText("");
-        fathercpass.setText("");
-    }
+   /** @Override
+ //   public void onResume() {
+   //     super.onResume();
+        //fathername.setText("");
+        //fatheremail.setText("");
+        //fatherpass.setText("");
+        //fathercpass.setText("");
+   // }*/
 }
