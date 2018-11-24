@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,149 +7,141 @@
     android:background="@color/babckgray"
     android:orientation="vertical">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="4dp"
         android:layout_margin="20dp"
         android:layout_gravity="center_horizontal">
-
-        <LinearLayout
-            android:background="#FFF"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_width="300dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#FFF"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/facaoseu"
-                android:ems="10"
-                android:textStyle="bold"
-                android:textColor="#000"
-                android:textSize="30sp"
-                android:fontFamily="sans-serif-condensed"
-                android:layout_marginBottom="5dp"
-                android:background="@color/greyW"
-                />
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/fathername"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:ems="10"
-                android:layout_marginTop="16dp"
-                android:hint="@string/npai"
-                android:inputType="text"
-                android:singleLine="true"
-                android:textSize="16sp"
-                android:background="@drawable/edittext"
-                 android:layout_gravity="center_horizontal"
-                />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/facaoseu"
+                    android:ems="10"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginBottom="5dp"
+                    />
 
-            <EditText
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/father_name"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:ems="10"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/npai"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    />
 
-                android:layout_marginTop="16dp"
-                android:textSize="16sp"
-                android:id="@+id/mothername"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:layout_marginBottom="8dp"
-                android:inputType="text"
-                android:singleLine="true"
-                android:hint="@string/nmae"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/edittext"/>
-            <EditText
-                android:id="@+id/fathernickname"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:ems="10"
-                android:layout_marginTop="16dp"
-                android:hint="@string/nickname"
-                android:inputType="text"
-                android:singleLine="true"
-                android:textSize="16sp"
-                android:background="@drawable/edittext"
-                android:layout_gravity="center_horizontal"
-                />
-            <EditText
-                android:textSize="16sp"
-                android:id="@+id/morada"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="20dp"
-                android:ems="10"
-                android:inputType="text"
-                android:hint="@string/morada"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/edittext"/>
+               <android.support.design.widget.TextInputEditText
+                   android:layout_marginTop="16dp"
+                   android:textSize="16sp"
+                   android:id="@+id/mother_name"
+                   android:layout_width="300dp"
+                   android:layout_height="wrap_content"
+                   android:ems="10"
+                   android:layout_marginBottom="8dp"
+                   android:inputType="text"
+                   android:singleLine="true"
+                   android:hint="@string/nmae"
+                   android:layout_gravity="center_horizontal"
+                   />
 
-            <EditText
-                android:textSize="16sp"
-                android:id="@+id/fatheremail"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="16dp"
-                android:ems="10"
-                android:hint="@string/FatherEmail"
-                android:inputType="textEmailAddress"
-                android:singleLine="true"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/edittext"
-                />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/user_name"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:ems="10"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/nickname"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"/>
 
-            <EditText
-                android:textSize="16sp"
-                android:background="@drawable/edittext"
-                android:id="@+id/password"
-                android:layout_width="300dp"
-                android:layout_marginTop="16dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:ems="10"
-                android:hint="@string/PW"
-                android:inputType="textPassword"
-                />
+                <android.support.design.widget.TextInputEditText
+                    android:textSize="16sp"
+                    android:id="@+id/morada"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:hint="@string/morada"
+                    android:layout_gravity="center_horizontal"
+                   />
 
-            <EditText
-                android:textSize="16sp"
-                android:background="@drawable/edittext"
-                android:id="@+id/confirrmarpassoword"
-                android:layout_width="300dp"
-                android:layout_marginTop="16dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:ems="10"
-                android:hint="@string/CPW"
-                android:inputType="textPassword"
-                />
+                <android.support.design.widget.TextInputEditText
+                    android:textSize="16sp"
+                    android:id="@+id/user_email"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="@string/FatherEmail"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal"
+                   />
 
+                <android.support.design.widget.TextInputEditText
+                    android:textSize="16sp"
+                    android:id="@+id/user_password"
+                    android:layout_width="300dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:hint="@string/PW"
+                    android:inputType="textPassword"/>
 
-            <Button
-                android:id="@+id/salvar"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="36dp"
-                android:background="@drawable/bentrar"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:text="@string/salvar"
-                android:layout_marginTop="8dp"
-                android:textColor="#FFF"
-                android:layout_gravity="center_horizontal"/>
-        </LinearLayout>
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/confirrmarpassoword"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="@string/CPW"
+                    android:inputType="textPassword"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/salvar"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="36dp"
+                    android:background="@drawable/bentrar"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/salvar"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        </android.support.design.widget.TextInputLayout>
+
     </android.support.v7.widget.CardView>
 </ScrollView>
-
-</LinearLayout>

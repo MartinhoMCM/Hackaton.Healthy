@@ -18,23 +18,31 @@
 
         <ImageView
             android:id="@+id/imagemInicial"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
             android:layout_gravity="center"
-            android:src="@drawable/syringetoy" />
+            android:src="@drawable/syringetoy"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="@string/wellcome"
-            android:textColor="#FFF"
+            android:text="@string/CartaodeSaude"
+            android:textColor="#000"
             android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textStyle="bold"
             android:id="@+id/textoInicial"/>
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Por uma criança mais saudável"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"/>
     </LinearLayout>
 
 

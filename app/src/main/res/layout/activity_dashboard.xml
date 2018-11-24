@@ -41,27 +41,30 @@
            android:orientation="horizontal">
 
            <ImageButton
-               android:id="@+id/imageButton"
+               android:id="@+id/calendarButton"
                android:layout_width="101dp"
                android:layout_height="100dp"
+               android:clickable="true"
                android:layout_marginBottom="8dp"
                android:layout_marginEnd="16dp"
                android:layout_marginStart="16dp"
                android:layout_marginTop="16dp"
+               android:onClick="BotaoCalendar"
                android:background="@drawable/calendar"
+               android:contentDescription="@string/calendar"
                app:layout_constraintBottom_toBottomOf="parent"
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintHorizontal_bias="0.831"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintVertical_bias="0.025"
-               android:contentDescription="@string/calendar"/>
+               app:layout_constraintVertical_bias="0.025" />
 
            <TextView
                android:layout_width="wrap_content"
                android:layout_height="17dp"
                android:layout_marginBottom="8dp"
                android:layout_marginStart="8dp"
+               android:onClick="Entrar"
                android:text="@string/alerta"
                android:textColor="#000"
                app:layout_constraintBottom_toBottomOf="parent"
@@ -72,22 +75,26 @@
                app:layout_constraintVertical_bias="0.361" />
 
            <ImageButton
+               android:id="@+id/alertaButton"
                android:layout_width="101dp"
                android:layout_height="100dp"
                android:layout_marginBottom="8dp"
                android:layout_marginEnd="8dp"
                android:layout_marginStart="16dp"
+               android:onClick="Entrar"
+               android:clickable="true"
                android:layout_marginTop="16dp"
                android:background="@drawable/alerta"
+               android:contentDescription="@string/alerta"
                app:layout_constraintBottom_toBottomOf="parent"
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintHorizontal_bias="0.219"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintVertical_bias="0.025"
-               android:contentDescription="@string/alerta" />
+               app:layout_constraintVertical_bias="0.025" />
 
            <TextView
+               android:id="@+id/textView2"
                android:layout_width="wrap_content"
                android:layout_height="18dp"
                android:layout_marginBottom="8dp"
@@ -101,6 +108,26 @@
                app:layout_constraintTop_toTopOf="parent"
                app:layout_constraintVertical_bias="0.372" />
 
+           <android.support.design.widget.FloatingActionButton
+               android:id="@+id/fab"
+               android:layout_width="56dp"
+               android:layout_height="56dp"
+               android:layout_gravity="end|bottom"
+               android:layout_margin="16dp"
+               android:layout_marginBottom="16dp"
+               android:layout_marginEnd="8dp"
+               android:layout_marginStart="8dp"
+               android:background="#009688"
+               android:onClick="Nova_Cardeneta"
+               android:src="@drawable/ic_add_48pt_2x"
+               app:fabCustomSize="40dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.932"
+               app:layout_constraintStart_toStartOf="parent"
+               />
+
+
        </android.support.constraint.ConstraintLayout>
 
     </LinearLayout>
@@ -113,6 +140,7 @@
         >
 
     </android.support.design.widget.NavigationView>
+
 
     </android.support.v4.widget.DrawerLayout>
 

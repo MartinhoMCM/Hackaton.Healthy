@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity  implements HomeFragment.OnDbOpListener , Father_Fragment.OnItemSelectedListener{
+public class MainActivity extends AppCompatActivity  implements HomeFragment.OnDbOpListener , Father_Fragment.OnItemSelectedListener, SonFragment.SendRegisteredData{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,14 +37,24 @@ public class MainActivity extends AppCompatActivity  implements HomeFragment.OnD
     }
 
     @Override
-    public void onRssItemSelected(String fathername, String fatheremail, String fatherpass) {
+    public void onRssItemSelected(String father_name, String mother_name, String user_name, String morada, String email, String fatherpass) {
 
       SonFragment sonFragment = new SonFragment();
         Bundle bundle = new Bundle();
-        bundle.putString("fathername", fathername);
-        bundle.putString("fatheremail", fatheremail);
-        bundle.putString("fatherpassword", fatherpass);
+        bundle.putString("father_name", father_name);
+        bundle.putString("mother_name", mother_name);
+        bundle.putString("user_name", user_name);
+        bundle.putString("morada", morada);
+        bundle.putString("user_email", email);
+        bundle.putString("user_password", fatherpass);
         sonFragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, sonFragment, null).addToBackStack(null).commit();
+    }
+
+
+    @Override
+    public void SendRegisteredData_to_Login() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new LoginFragment()).addToBackStack(null).commit();
+
     }
 }

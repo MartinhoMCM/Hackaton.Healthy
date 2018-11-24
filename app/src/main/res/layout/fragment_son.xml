@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,9 +10,17 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="4dp"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="20dp"
-        android:layout_gravity="center_horizontal">
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,85 +29,81 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/textView"
+                android:id="@+id/text_son"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="13"
                 android:text="@string/bebe"
-                android:textColor="#000"
-                android:textSize="19sp"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Subtitle"
-                 />
+                android:textColor="#000"
+                android:textSize="19sp" />
 
             <EditText
-                android:textSize="16sp"
-                android:background="@drawable/edittext"
                 android:id="@+id/babyname"
                 android:layout_width="300sp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
                 android:layout_marginTop="12dp"
+                android:background="@drawable/edittext"
                 android:ems="10"
-
                 android:hint="@string/nome"
-                />
+
+                android:textSize="16sp" />
 
             <EditText
-                android:textSize="16sp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/edittext"
-                android:id="@+id/babyidade"
+                android:id="@+id/babyage"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="8dp"
+                android:background="@drawable/edittext"
                 android:ems="10"
                 android:hint="@string/idade"
                 android:inputType="number"
-                />
-            <EditText
-                android:background="@drawable/edittext"
-                android:id="@+id/babysexo"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="12dp"
-                android:textSize="16sp"
-                android:ems="10"
-                android:hint="@string/sexo"
-                />
+                android:textSize="16sp" />
 
             <EditText
-                android:background="@drawable/edittext"
-                android:id="@+id/data_nascimento"
+                android:id="@+id/babysex"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
                 android:layout_marginTop="12dp"
-                android:textSize="16sp"
+                android:background="@drawable/edittext"
+                android:ems="10"
+                android:hint="@string/sexo"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/babybirth"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext"
                 android:ems="10"
                 android:hint="@string/data"
                 android:inputType="date"
-                />
+                android:textSize="16sp" />
 
             <Button
-                android:textSize="16sp"
                 android:id="@+id/registrar"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bentrar"
                 android:ems="70"
                 android:fontFamily="sans-serif"
                 android:text="@string/concluindo"
                 android:textColor="#FFF"
+                android:textSize="16sp"
 
                 />
 
@@ -113,4 +117,4 @@
 
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

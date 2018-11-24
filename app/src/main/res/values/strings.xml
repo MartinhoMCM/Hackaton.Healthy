@@ -6,19 +6,18 @@
     <string name="Entrar"> Entrar</string>
     <string name="ImageP">Imagem Principal</string>
     <string name="login"> Login </string>
-    <string name="textLogin">Faça o login para teres o acesso cartão de saúde infantil</string>
+    <string name="textLogin">Login</string>
     <string name="FatherName">Nome </string>
     <string name="FatherEmail">Email</string>
     <string name="PW">Palavra Passe</string>
     <string name="CPW">Confirma a Palavra Passe</string>
-    <string name="salvar"> Salvar </string>
+    <string name="salvar"> Salvar e Avançar </string>
     <string name="sex"> Sexo </string>
     <string name="registrar">Registrar</string>
     <string name="nome">Nome</string>
     <string name="sexo">Sexo (M ou F)</string>
     <string name="idade">Idade</string>
     <string name="concluindo">Concluindo o Registro</string>
-    <string name="pai">Como responsável da criança, primeiro adicione seus dados</string>
     <string name="bebe">Para terminares, introduza os dados do bebé</string>
     <string name="signIn">Entrar</string>
     <string name="IPW">Palavra Passe</string>
@@ -46,5 +45,47 @@
     <string name="data">Data de Nascimento</string>
     <string name="CartaodeSaude">Cartão de Saúde Infantil</string>
     <string name="nickname">Nome do Usuário</string>
+    <string name="empty"> </string>
+    <string name="comma">,</string>
 
+    <string name="preencha">para terminares preencha os dados da criança</string>
+
+    
+    
+    
+    <!-- Doses-->
+    
+    <string name="dose_0"> Zero Dose</string>
+    <string name="deso_unica">Dose Única</string>
+    <string name="primeira_dose">1ª Dose</string>
+    <string name="segunda_dose">2ª Dose</string>
+    <string name="terceira_dose">3ª Dose</string>
+    <string name="dose_nascencia"> Dose a Nascência</string>
+
+   
+    <!--- Vacinas -->
+    
+    <string name="polio"> Pólio</string>
+    <string name="bcg">BCG</string>
+    <string name="pentavalente">Pentavalente</string>
+    <string name="hepatite">Hepatite B</string>
+    <string name="rotavirus">Rotavírus</string>
+    <string name="pneumo">Pneumo</string>
+    <string name="sarampo">Sarampo</string>
+    <string name="vitamina">Vitamina A</string>
+    <string name="febre_amarela">Febre Amarela</string>
+
+    <!-- Meses -->
+
+      <string name="ao_nascer">Aos nascer</string>
+    <string name="aos_2_meses">Aos 2 meses</string>
+    <string name="aos_4meses">Aos 4 meses</string>
+    <string name="aos_6mese">Aos 6 meses</string>
+    <string name="aos_9meses">Aos 9 meses</string>
+
+
+
+    <!---->
+
+    <string name="calendarioB">Calendário Básico de Vacinação</string>
 </resources>
