@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class User_Session {
 
     private SharedPreferences pref;
-    private SharedPreferences.Editor editor;
+    SharedPreferences.Editor editor;
 
     private Context context;
 
@@ -23,15 +23,8 @@ public class User_Session {
 
     private static final String IS_USER_LOGIN="IsUserLoggedIn";
 
-    public static final String KEY_FATHER="father_name";
-    public static final String KEY_MOTHER="mother_name";
-   // public static final String KEY_USER_NAME="user_name";
-    public static final String KEY_morada ="morada";
     public static final String KEY_USER_EMAIL="user_email";
     public static final String KEY_USER_PASS="user_password";
-    public static final String KEY_BABY_NAME="baby_name";
-    public static final String KEY_BABY_AGE ="baby_age";
-    public static final String KEY_BABY_BIRTH="baby_birth";
 
     public User_Session(Context context)
     {
@@ -79,7 +72,7 @@ public class User_Session {
             editor.clear();
             editor.commit();
 
-            Intent intent = new Intent(context, Principal_User_Interface.class);
+            Intent intent = new Intent(context,SonFragment.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 

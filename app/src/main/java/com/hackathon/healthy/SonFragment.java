@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SonFragment extends Fragment implements View.OnClickListener {
+public class SonFragment extends Fragment implements  View.OnClickListener{
 
     Button Bconcluir;
     TextView textView1;
@@ -24,16 +24,14 @@ public class SonFragment extends Fragment implements View.OnClickListener {
     SharedPreferences pref;
     SharedPreferences.Editor editor;
 
-    public EditText babyname, babyage, babysex;
+    public EditText baby_name, baby_age, baby_sex, baby_birth;
 
-    private  SendRegisteredData send;
-
+    public SendRegisteredData send;
     public interface SendRegisteredData
     {
-       void SendRegisteredData_to_Login();
+        void SendRegisteredData_to_Login();
 
     }
-
     public SonFragment() {
         // Required empty public constructor
     }
@@ -50,63 +48,82 @@ public class SonFragment extends Fragment implements View.OnClickListener {
         morada =bundle.getString("morada");
         user_email=bundle.getString("user_email");
         user_password=bundle.getString("user_password");
-
-
         textView1.setText(getString(R.string.ola) + " " + user_name + " " +getString(R.string.comma)+ " "+getString(R.string.preencha));
-        babyname = view.findViewById(R.id.babyname);
-        babyage=view.findViewById(R.id.babyage);
-        babysex =view.findViewById(R.id.babysex);
 
         // Criando o ficheiro SharedPreference  para informacao ser armazenada
 
-        pref =getActivity().getSharedPreferences("Registration", 0);
-        editor =pref.edit();
+        baby_name = view.findViewById(R.id.baby_name);
+        baby_age=view.findViewById(R.id.baby_age);
+        baby_sex =view.findViewById(R.id.baby_sex);
+        baby_birth =view.findViewById(R.id.baby_birth);
 
+        pref =getContext().getSharedPreferences("Registration", 0);
+        editor =pref.edit();
         Bconcluir =view.findViewById(R.id.registrar);
         Bconcluir.setOnClickListener(this);
         return  view;
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
 
-        String baby_name=babyname.getText().toString();
-        String baby_age=babyage.getText().toString();
-        String baby_sex=babysex.getText().toString();
+        // Criando o ficheiro SharedPreference  para informacao ser armazenada
 
-        if(baby_age.compareToIgnoreCase("")==0 || baby_name.compareToIgnoreCase("")==0 || baby_sex.compareToIgnoreCase("")==0)
-        {
-            Toast.makeText(getContext(), "Campos vazios, por favor preencha", Toast.LENGTH_SHORT).show();
-        }
-        else{
-            editor.putString("father_name", father_name);
-            editor.putString("mother_name", mother_name);
-            editor.putString("user_name", user_name);
-            editor.putString("morada", morada);
-            editor.putString("user_email", user_email);
-            editor.putString("user_password", user_password);
-            editor.putString("baby_name", baby_name);
-            editor.putString("baby_sex", baby_sex);
-            editor.putString("baby_age", baby_age);
-            editor.commit();
-            babyname.setText("");
-            babysex.setText("");
-            babyage.setText("");
+        pref =getActivity().getSharedPreferences("Registration", 0);
+        editor =pref.edit();
 
-            send.SendRegisteredData_to_Login();
-            Toast.makeText(getContext(), "Registrado com sucesso", Toast.LENGTH_SHORT).show();
-        }
-    }
+                String Baby_name = baby_name.getText().toString();
+                String Baby_age = baby_age.getText().toString();
+                String Baby_sex = baby_sex.getText().toString();
+                String Baby_birth=baby_birth.getText().toString();
+
+                if (Baby_age.length() <= 0) {
+                    Toast.makeText(getActivity(), "Introduza o campo idade", Toast.LENGTH_SHORT).show();
+                } else if (Baby_name.length() <= 0) {
+                    Toast.makeText(getActivity(), "Introduza o campo nome", Toast.LENGTH_SHORT).show();
+
+                } else if (Baby_sex.length() <= 0) {
+                    Toast.makeText(getActivity(), "Introduza o campo sexo", Toast.LENGTH_SHORT).show();
+                }
+                else if(Baby_birth.length()<=0)
+                {
+                    Toast.makeText(getActivity(), "Introduza o campo nascimento", Toast.LENGTH_SHORT).show();
+                }
+                    else {
+                    editor.putString("father_name", father_name);
+                    editor.putString("mother_name", mother_name);
+                    editor.putString("user_name", user_name);
+                    editor.putString("morada", morada);
+                    editor.putString("user_email", user_email);
+                    editor.putString("user_password", user_password);
+                    editor.putString("baby_name", Baby_name);
+                    editor.putString("baby_age", Baby_age);
+                    editor.putString("baby_sex", Baby_sex);
+                    editor.putString("baby_birth", Baby_birth);
+                    editor.commit();
+
+
+                    send.SendRegisteredData_to_Login();
+                    Toast.makeText(getActivity(), "Registrado com sucesso", Toast.LENGTH_SHORT).show();
+
+
+                }
+
+            }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof SendRegisteredData) {
-            send = (SendRegisteredData) context;
-        } else {
-            throw new ClassCastException(context.toString()
-                    + " must implement MyListFragment.OnItemSelectedListener");
+
+        if(context instanceof SendRegisteredData)
+        {
+            send =(SendRegisteredData) context;
+
+        }
+        else
+        {
+            throw new ClassCastException(context.toString());
         }
     }
-
-
 }
+

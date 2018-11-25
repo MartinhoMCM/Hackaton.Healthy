@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     tools:context="com.hackathon.healthy.SonFragment"
     android:background="@color/babckgray"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/TextInput">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -41,55 +42,52 @@
                 android:textColor="#000"
                 android:textSize="19sp" />
 
-            <EditText
-                android:id="@+id/babyname"
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/baby_name"
                 android:layout_width="300sp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/edittext"
                 android:ems="10"
                 android:hint="@string/nome"
 
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/babyage"
+                android:id="@+id/baby_age"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/edittext"
                 android:ems="10"
                 android:hint="@string/idade"
                 android:inputType="number"
                 android:textSize="16sp" />
 
-            <EditText
-                android:id="@+id/babysex"
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/baby_sex"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/edittext"
                 android:ems="10"
                 android:hint="@string/sexo"
                 android:textSize="16sp" />
 
-            <EditText
-                android:id="@+id/babybirth"
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/baby_birth"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/edittext"
                 android:ems="10"
                 android:hint="@string/data"
                 android:inputType="date"
                 android:textSize="16sp" />
+
 
             <Button
                 android:id="@+id/registrar"
@@ -102,7 +100,7 @@
                 android:ems="70"
                 android:fontFamily="sans-serif"
                 android:text="@string/concluindo"
-                android:textColor="#FFF"
+                android:textColor="#000"
                 android:textSize="16sp"
 
                 />

@@ -56,5 +56,6 @@ public class MainActivity extends AppCompatActivity  implements HomeFragment.OnD
     public void SendRegisteredData_to_Login() {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new LoginFragment()).addToBackStack(null).commit();
 
+
     }
 }

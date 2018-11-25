@@ -1,7 +1,11 @@
 package com.hackathon.healthy;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.design.internal.NavigationMenuItemView;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,7 +17,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class Dashboard extends AppCompatActivity{
+public class Dashboard extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener{
 
     FloatingActionButton floatingActionButton;
 
@@ -89,5 +93,35 @@ public class Dashboard extends AppCompatActivity{
     }
 
     public void Nova_Cardeneta(View view) {
+
+
+    }
+
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        int id =item.getItemId();
+
+        if(id==R.id.mycards)
+        {
+
+        }
+        else  if(id==R.id.location)
+        {
+
+        }
+        else if(id==R.id.sobrevacinas)
+        {
+
+        }
+        else if(id==R.id.tools)
+        {
+
+        }
+
+        DrawerLayout drawer=(DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 }

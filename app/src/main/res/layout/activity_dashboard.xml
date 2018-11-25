@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context="com.hackathon.healthy.Dashboard" android:orientation="horizontal">
+    tools:openDrawer="start"
+    android:orientation="horizontal">
 
    <LinearLayout
         android:layout_width="match_parent"

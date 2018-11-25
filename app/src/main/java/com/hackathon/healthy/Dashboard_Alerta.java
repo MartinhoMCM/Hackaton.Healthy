@@ -35,28 +35,28 @@ public class Dashboard_Alerta extends AppCompatActivity {
 
             switch (i)
             {
-                case 0: ListItem listItem0 = new ListItem("Vacina Pólio - Zero Dose ", "Faltam x dias");
+                case 0: ListItem listItem0 = new ListItem("Vacina Pólio - Zero Dose ", "Faltam 30 dias");
                     listItems.add(listItem0);
                 break;
-                case 1: ListItem listItem1= new ListItem("Vacina Pólio - Dose Única", "Faltam x dias");
+                case 1: ListItem listItem1= new ListItem("Vacina Pólio - Dose Única", "Faltam 30 dias");
                     listItems.add(listItem1);
                 break;
-                case 2: ListItem listItem2 = new ListItem("Vacina Pólio - Dose a Nascença ", "Faltam x dias");
+                case 2: ListItem listItem2 = new ListItem("Vacina Pólio - Dose a Nascença ", "Faltam 30 dias");
                     listItems.add(listItem2);
                 break;
-                case 3: ListItem listItem3 = new ListItem("Vacina Pólio - 1ª Dose  ", "Faltam x dias");
+                case 3: ListItem listItem3 = new ListItem("Vacina Pólio - 1ª Dose  ", "Faltam 1 mes");
                     listItems.add(listItem3);
-                case 4: ListItem listItem4= new ListItem("Vacina Pentavalente -  1ª Dose ", "Faltam x dias");
+                case 4: ListItem listItem4= new ListItem("Vacina Pentavalente -  1ª Dose ", "Faltam 1 mes ");
                     listItems.add(listItem4);
-                case 5: ListItem listItem5 = new ListItem("Vacina Pneump - 1ª Dose ", "Faltam x dias");
+                case 5: ListItem listItem5 = new ListItem("Vacina Pneump - 1ª Dose ", "Faltam 1 mes ");
                     listItems.add(listItem5);
-                case 6: ListItem listItem6 = new ListItem("Vacina Rotavírus - 1º Única ", "Faltam x dias");
+                case 6: ListItem listItem6 = new ListItem("Vacina Rotavírus - 1º Única ", "Faltam 2 mes");
                     listItems.add(listItem6);
-                case 7: ListItem listItem7 = new ListItem("Vacina Dose Única ", "Faltam x dias");
+                case 7: ListItem listItem7 = new ListItem("Vacina Frebre Amarela ", "Faltam 2 meses");
                     listItems.add(listItem7);
-                case 8: ListItem listItem8 = new ListItem("Vacina Dose Única ", "Faltam x dias");
+                case 8: ListItem listItem8 = new ListItem("Vacina Dose Única ", "Faltam 2 meses");
                     listItems.add(listItem8);
-                case 9: ListItem listItem9 = new ListItem("Vacina Dose Única ", "Faltam x dias");
+                case 9: ListItem listItem9 = new ListItem("Vacina Dose Única ", "Faltam 3 meses");
                     listItems.add(listItem9);
                     break;
             }

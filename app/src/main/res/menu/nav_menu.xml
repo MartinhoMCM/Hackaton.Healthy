@@ -6,7 +6,7 @@
 
     <item android:icon="@drawable/ic_location_on_black_24dp" android:id="@+id/location" android:title="@string/location">
         </item>
-    <item android:icon="@drawable/ic_event_3x" android:id="@+id/sobrevacinas" android:title="@string/aboutvacine" ></item>
+    <item android:icon="@drawable/ic_event_3x" android:id="@+id/sobrevacinas" android:title="@string/aboutvacine"  ></item>
 
         <item android:id="@+id/tools"  android:icon="@drawable/ic_build_18pt_3x" android:title="@string/tools"></item>
 
