@@ -4,23 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="160dp"
     android:orientation="vertical"
-   android:background="@color/babckgray">
+    android:background="@color/babckgray"
+    android:paddingStart="@dimen/activity_horizontal_margin">
 
     <ImageView
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:src="@drawable/africachild"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BabyName"
-        android:textColor="#FFF"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="martinhocorreiamussamba@gmail.com"
-        android:textColor="#fff"/>
+        android:src="@drawable/africachild"
+        android:scaleType="centerCrop"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BabyName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="martinhocorreiamussamba@gmail.com"/>
 
 </LinearLayout>
